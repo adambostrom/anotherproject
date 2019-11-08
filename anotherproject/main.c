@@ -28,6 +28,15 @@ int main()
 	(*pp)[0] = 'P';				// *pp ekv med p (== s2). s2[0]. Ändrar s2[0] till 'P'
 	printf("%s\n", p);
 
+	*(p + 1) = 'A';
+	(*pp)[3] = 'p';
+	printf("%s\n", p);
+
+	s1 = *p;
+	**pp = s1;
+	
+	printf("%s\n", *pp);
+
 	system("pause");
 	return 0;
 }
